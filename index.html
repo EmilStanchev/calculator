@@ -1,0 +1,63 @@
+<!Doctype <html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="custom.css">
+    <script src="calculator.js"></script>
+</head>
+<title>Home</title>
+
+
+<body>
+    <div class="calculatorImage">
+        <img src="Images/phone1.png" alt="Photo">
+    </div>
+    <div class="name">
+        <h1>Calculator</h1>
+    </div>
+    <form name="calc" class="main">
+        <div class="calculator">
+            <input type="text" id="calculator1" value="">
+        </div>
+        <div class="columns">
+            <input type="button" value="1" onclick="getNum(this.form,one)">
+            <input type="button" value="2" onclick="getNum(this.form,two)">
+            <input type="button" value="3" onclick="getNum(this.form,three)">
+            <input type="button" value="4" onclick="getNum(this.form,four)">
+
+        </div>
+        <div class="columns">
+            <input type="button" value="5" onclick="getNum(this.form,five)">
+            <input type="button" value="6" onclick="getNum(this.form,six)">
+            <input type="button" value="7" onclick="getNum(this.form,seven)">
+            <input type="button" value="8" onclick="getNum(this.form,eight)">
+        </div>
+        <div class="columns">
+            <input type="button" value="9" onclick="getNum(this.form,nine)">
+            <input type="button" value="0" onclick="getNum(this.form,zero)">
+            <input type="button" value="," onclick="getNum(this.form,coma)">
+            <input type="button" value="+" onclick="getNum(this.form,add)">
+
+
+        </div>
+        <div class="columns">
+            <input type="button" value="*" onclick="getNum(this.form,multiply)">
+            <input type="button" value="/" onclick="getNum(this.form,divide)">
+            <input style="width: 2,4%; margin-left: 0.8%;" type="button" value="-" onclick="getNum(this.form,subtract)">
+            <input type="button" value="=" onclick="compute()">
+        </div>
+        <div class="columns">
+            <input type="reset" value="C" onclick="getNum(this.form)">
+            <input type="button" value="√" onclick="sqrt()">
+            <input style="width: 5%;" type="button" value="%" onclick="percent()">
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <input style="background-image: url(Images/back2.jpg);" class="selected" id="calculator" type="text"
+            value="History: " onclick="compute(this.form)">
+    </form>
+</body>
+
+</html>

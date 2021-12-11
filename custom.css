@@ -1,0 +1,75 @@
+body{
+  background-image: url(Images/bk.jpg);
+  text-align: center;
+}
+.calculator{
+  margin-top:0;
+  position: relative;
+}
+.calculator input{
+  background-color: orange;
+  font-size: 170%;
+  height: 5%;
+  position: relative;
+}
+.columns input{
+  width: 55px;
+  display: inline-block;
+  margin-right: 1%;
+  font-size: 400%;
+  background: center;
+  background-color: orange;
+  position: relative;
+}
+.columns input:hover{
+  cursor: pointer;
+  transform: translate3d(-10px,-10px,-10px);
+  background-color: darkturquoise;
+  position: relative;
+}
+
+.unselected{
+  visibility: hidden;
+}
+
+.selected{
+  visibility: visible;
+  color: red;
+  font-size: 150%;
+  background: none;
+  position: relative;
+}
+.historyButton{
+  font-size: 300%;
+  background: center;
+  background-color: orange;
+  position: relative;
+
+}
+.name{
+  color: white;
+   padding: 5%;
+  overflow: hidden;
+  letter-spacing: .15em;
+  position: relative;
+}
+.calculatorImage{
+  position: absolute;
+  width:58%;
+  left: 13%;
+}
+.calculatorImage img{
+  width: 132%;
+
+}
+
+/* 
+    if(val=="percent"){
+        let a = document.getElementById("calculator1");
+        a.value = eval(document.getElementById("calculator1").value/100)
+    }if(val ="root"){
+        document.getElementById("calculator1").value = Math.sqrt((document.getElementById("calculator1").value));
+    }else{
+        document.getElementById("calculator1").value = eval(document.getElementById("calculator1").value)
+
+    }*/
